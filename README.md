@@ -1,5 +1,5 @@
 # Flutter Basics 
-Welcome to my first personal Flutter app. The main objective of this application, is to understand and test with each widget that Flutter provides using an example of each one. You can download it and see the examples, but cannot use it for commercial purpouses.
+Welcome to my first personal Flutter app. The main objective of this application, is to understand and test with each widget that Flutter provides using an example of each one. You can download it and see the examples, but cannot use it for commercial purposes.
 
 ## Setting up the app
 In order to download and use this Flutter application, follow these instructions.
