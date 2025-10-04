@@ -6,8 +6,8 @@ In order to download and use this Flutter application, follow these instructions
 1. Open Git on your device
 2. On the repository overview, select Code > https > copy project url
 3. Run ` git clone [branchName] ` to download the Flutter Widget guide you choose on your device.
-4. Run ` cd [folderName] ` to access the branch content, then run `code .` to open in on VS Code
-One openeTo run the project, use the following command:
+4. Run ` cd [folderName] ` to access the branch content, then run `code .` to open in on VS Code.
+Once opened, you can run the project, using the following command:
 
 ` flutter run `
 
