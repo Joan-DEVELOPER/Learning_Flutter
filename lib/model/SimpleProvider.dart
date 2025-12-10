@@ -10,6 +10,7 @@ class SimpleProvider with ChangeNotifier {
   }
 
   void resetName() {
-    _name = "Default name";
+    _name = "Provider App";
+    notifyListeners();
   }
 }

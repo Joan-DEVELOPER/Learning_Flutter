@@ -20,6 +20,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     final appName = context.watch<SimpleProvider>();
     dynamic displayedName = appName.getName;
+    final newName = "NewName"; //Change this to update the name
 
     return MaterialApp(
       home: Scaffold(
@@ -36,6 +37,7 @@ class _MyAppState extends State<MyApp> {
             Row(
               children: [
                 Container(
+                  width: 200,
                   margin: EdgeInsets.all(10),
                   padding: EdgeInsets.all(20),
                   decoration: BoxDecoration(
@@ -44,14 +46,48 @@ class _MyAppState extends State<MyApp> {
                   child: Center(
                     child: Text(
                       displayedName,
-                      style: TextStyle(color: Colors.black, fontSize: 22),
+                      style: TextStyle(
+                        color: Colors.blueAccent,
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ),
 
                 SizedBox(width: 20),
 
-                Center(child: Text("Este es un texto de prueba")),
+                Column(
+                  children: [
+                    ElevatedButton(
+                      onPressed: () {
+                        appName.setName(newName);
+                      },
+                      child: Text(
+                        "Update name",
+                        style: TextStyle(
+                          color: Colors.blueAccent,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+
+                    SizedBox(height: 20),
+
+                    ElevatedButton(
+                      onPressed: () {
+                        appName.resetName();
+                      },
+                      child: Text(
+                        "Reset name",
+                        style: TextStyle(
+                          color: Colors.blueAccent,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ],
             ),
           ],
