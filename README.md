@@ -1,7 +1,5 @@
-# BottomBarButton 
-Welcome to my first personal Flutter app. The main objective of this application, is to understand and test with each type of Flutter button. To run the project, use the following command:
+# Provider Exercice
+Welcome to this Flutter development exercice. The main objective of this one, is to provide a logical activiti related to Flutter Provider, which sets the app name and alown you to update it.
 
-` flutter run `
-
-This will create a debug sessión, check if the app works without issues and launch it on the choosen platform. During the flutter debug, it will pop up a window, asking which system should be use. Select the one that fits your needs.
+Once installed, run the command `flutter run` to starts de application and choose the device where you want to use.
 
